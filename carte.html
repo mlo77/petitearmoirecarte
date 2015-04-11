@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        margin: 20px  !important;
+        padding: 0px;
+        font-size: 35px !important;
+      }
+      .cont {
+        height: 676px;
+        width: 2046px;
+        border: 1px solid;
+        border-color: grey;
+      }
+      .contleft {
+        height : 100%;
+        width : 49% !important;
+        //border: 1px solid;
+        //border-color: red; 
+        margin-left: 1%;
+      }
+      .contright {
+        height : 100%;
+        width : 49% !important;
+        //border: 1px solid;
+        //border-color: blue; 
+      }
+      .tableleft {
+        margin-top: 3%;
+      }
+
+      .case {
+        height: 170px;
+        width: 170px;
+        font-size: 20px;
+      }
+      .case2 {
+        height: 218px;
+        width: 171px;
+        font-size: 24px;
+        float: left;
+        margin-left: 2%;
+        margin-top: 1%;
+        //border-style: 1px solid;
+        //border-bottom: dotted #ff0000;
+        //border-right: dotted #ff0000;
+      }
+      .logoinvert {
+        width: 21%;
+        opacity: 0.2;
+        margin-top: 8%;
+      }
+      .titlecenterfloat  {
+        text-align: center;
+        position: absolute;
+        top: 250px;
+        z-index: 1;
+        margin-top: 9%;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+
+      .titlecenter  {
+        text-align: center;
+        z-index: 1;
+        margin-top: 9%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-family: 'Enriqueta', serif;
+      }
+
+      .bottomcase {
+        padding-top: 0%;
+        //border: 1px solid;
+        //border-color: blue; 
+        font-size: 30px;
+      }
+      /*p {
+        border-style: 1px solid;
+        border-bottom: dotted #ff0000;
+      }*/
+      .separator {
+        width: 96%;
+        height: 1px;
+        background-color: black;
+        //border-style: 1px solid;
+        //border-bottom: dotted black; 
+        position: absolute;
+        top: 254px;
+      }
+
+      .vseparator {
+        width: 1px;
+        height: 73%;
+        background-color: black;
+        //border-style: 1px solid;
+        //border-left: dotted black; 
+        position: absolute;
+        top: 38px;
+      }
+
+      .trademark {
+        margin-top: 25%;
+      }
+
+      .imglabel {
+        width: 40%;
+        margin-top: 7%;
+      }
+      .inverted {
+        filter: invert(100%);
+      }
+
+      .flipped {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        opacity: 0.15;
+      }
+
+      .note {
+        width: 60%;
+        padding-top: 5%;
+      }
+    </style>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="cont">
+      <div class='row'>
+
+        <div class='contleft col-sm-6'>
+        <!--<div class='titlecenter'>Votre carte de fidélité</div>-->
+          <img src="img/logo.jpg" class="logoinvert center-block img-circle"/>
+          <img src="img/note.png" class="note center-block"/>
+          <!-- <div class='titlecenterfloat'>Pour votre 11ème achat, nous aurons le plaisir de vous faire bénéficier d'une <strong>remise de 5% du total des achats effectués</strong>.</div> -->
+
+          <!-- <div class='titlecenterfloat' style='font-size:30px; top: 450px;'>Cette carte est valable un an à compter du 1er achat</div> -->
+
+        </div>
+
+      <div class="contright col-sm-6">
+
+<div class="tableleft">
+
+<div style='opacity:0.3;'>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+  <div class="case2">
+    <!--<p>Date</p></br>
+    <p>Montant</p>--></div>
+
+
+<div class='separator' style=''></div>
+<!--<div class='separator' style='top:523px;'></div>-->
+<div class='vseparator' style='left:216px; width:1px;'></div>
+<div class='vseparator' style='left:404px;'></div>
+<div class='vseparator' style='left:596px;'></div>
+<div class='vseparator' style='left:788px;'></div>
+</div>
+
+  <div class='row'>
+    <div class="bottomcase col-sm-12">
+      <p>
+        <div style="text-align:center;">
+          Cette carte est valable un an à compter du 1er achat.</br>
+          Soit, pour votre 11ème achat une remise de :
+        </div>
+      </p>
+    </div>
+  </div>
+
+  </div>
+
+      </div>
+
+
+</div>
+
+</div>
+
+
+
+</br>
+
+    <div class="cont">
+      <div class='row'>
+      <div class="contleft col-sm-6" style="">
+
+<img src='img/palogo.png' class='center-block trademark inverted flipped'/>
+
+<!-- <img src='img/cartefid.png' class='center-block imglabel flipped'/> -->
+<img src='img/address.png' class='center-block imglabel' style="width:67%;"/>
+
+      </div>
+
+
+<div class='contright col-sm-6'>
+
+<img src='img/palogo.png' class='center-block trademark'/>
+
+<img src='img/cartefid.png' class='center-block imglabel'/>
+<!-- <div class='titlecenter'>carte de fidélité</div> -->
+</div>
+</div>
+
+</div>
+
+
+
+    <script>
+
+      $(function() {
+        console.log( "ready!" );
+        // d3.selectAll(".case").style("background-color", function(d,i) {
+        //   var ri = Math.floor( Math.random() * 6 + 3);
+        //   return colorbrewer.GnBu[9][i]
+        //   //return "hsl(" + Math.random() * 360 + ",100%,50%)";
+        // });
+
+        // d3.selectAll(".case2").style("background-color", function(d,i) {
+        //   var ri = Math.floor( Math.random() * 6 + 3);
+        //   return colorbrewer.GnBu[9][i]
+        //   //return "hsl(" + Math.random() * 360 + ",100%,50%)";
+        // });
+
+      });
+
+    </script>
+
+  </body>
+</html>
